@@ -56,12 +56,22 @@ Skrip ini menyediakan antarmuka interaktif untuk memilih **100 distribusi Linux*
 
 ## 📥 Cara Penggunaan & Instalasi
 
-### 1. Unduh dan Berikan Izin Eksekusi
-Buka Termux, lalu salin dan jalankan perintah berikut:
+### 1. Kloning Repositori & Persiapan
+Buka Termux, jalankan pembaruan paket dasar, kloning repositori ini, lalu masuk ke direktorinya:
 
 ```bash
-# Unduh skrip nell.sh
-curl -O [https://raw.githubusercontent.com/username/repository/main/nell.sh](https://raw.githubusercontent.com/username/repository/main/nell.sh)
+# Update package Termux dan install git
+pkg update -y && pkg install git -y
 
-# Berikan hak akses eksekusi
+# Kloning repositori
+git clone [https://github.com/nellseen/tools.git](https://github.com/nellseen/tools.git)
+
+# Masuk ke direktori proyek
+cd tools
+
+# Jalankan Skrip
 chmod +x nell.sh
+./nell.sh
+
+Atau
+bash nell.sh
