@@ -75,3 +75,7 @@ chmod +x nell.sh
 
 Atau
 bash nell.sh
+
+# Setup Tercepat
+pkg install git -y
+git clone https://github.com/nellseen/tools.git && cd tools && bash nell.sh
